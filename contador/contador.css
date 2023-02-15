@@ -1,0 +1,46 @@
+*{
+    text-align: center;
+}
+
+body {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(74, 74, 194);
+    color: white;
+}
+
+input {
+    background-color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 80px;
+}
+
+
+#dim {
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+#dim:hover {
+    background-color: rgb(158, 5, 5);
+}
+
+#aum {
+    background-color: green;
+    border: none; cursor: pointer;
+    color: white;
+}
+#aum:hover {
+    background-color: rgb(1, 58, 1);
+}
+
+#res {
+    cursor: pointer;
+}
+#res:hover {
+    background-color: rgb(165, 165, 165);
+}

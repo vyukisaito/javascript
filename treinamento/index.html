@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento</title>
+    <style>
+        div#area{
+            
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font: normal 20pt Arial;
+             position: relative;
+             width: 200px;
+             height: 200px;
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             margin: -100px 0 0 -100px;
+             text-align: center;
+             line-height: 200px;                                         
+        }
+        input{
+            font: normal 16pt Arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 30px;
+            font: normal 18pt Arial;
+        }
+        button{
+            size: 200px;
+        }
+        
+       
+
+    </style>
+</head>
+
+
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="txtn1" id="txtn1"> <strong>+</strong>
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <br>
+    <br>
+    <input type="number" name="txtn3" id="txtn3"> x
+    <input type="number" name="txtn4" id="txtn4">
+    <input type="button" style="width: 120px;" value="Multiplicar" onclick= "muntiplicar()">
+    <br>
+    <br>
+    <input type="number" name="txtn5" id="txtn5"> ÷
+    <input type="number" name="txtn6" id="txtn6">
+    <input type="button" style="width: 110px;" value="Dividir" onclick= "dividir()">
+    <div id= "res">Resultado</div>
+    
+
+
+
+    <div id= "area">
+        Interaja...
+    </div>
+    
+    
+    
+    <script>
+        function somar() {
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var res= document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}<strong>`
+
+        }
+
+        function muntiplicar() {
+            var tn3 = document.getElementById('txtn3')
+            var tn4 = document.getElementById('txtn4')
+            var res= document.getElementById('res')
+            var n3 = Number(tn3.value)
+            var n4 = Number(tn4.value)
+            var s = n3*n4
+            res.innerHTML= `A multiplicação entre ${n3} e ${n4} é igual a <strong>${s}<strong>`
+
+        }
+
+        function dividir() {
+            var tn5 = document.getElementById('txtn5')
+            var tn6 = document.getElementById('txtn6')
+            var res= document.getElementById('res')
+            var n5 = Number(tn5.value)
+            var n6 = Number(tn6.value)
+            var s = n5/n6
+            res.innerHTML= `A divisão entre ${n5} e ${n6} é igual a <strong>${s}<strong>`
+
+        }
+           
+
+
+
+       var a= document.getElementById('area')
+       a.addEventListener('click', clicar)
+       a.addEventListener('mouseenter', entrar) 
+       a.addEventListener('mouseout', sair)
+       a.addEventListener('mousedown', pressionar)
+       a.addEventListener('mouseup', soltou)
+       
+
+
+       function clicar() {
+        a.innerText= 'Clicou!'
+        a.style.background= 'green'
+       
+       }
+        function entrar() {
+            a.innerText= 'Entrou!'
+            a.style.background= '#7E839D'
+
+        }
+        function sair() {
+            a.innerText= 'Saiu!'
+            a.style.background= 'black'
+        }
+        function pressionar() {
+            a.innerText= 'Segurou!'
+            a.style.background='#954949' 
+        }
+        function soltou(){
+            a.innerText= 'Soltou!'
+            a.style.background='#95497D '
+        }
+        
+        
+    </script>
+
+
+</body>
+
+</html>

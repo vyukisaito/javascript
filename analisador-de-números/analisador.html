@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="analisador.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Analisador de Números
+        </h1>
+    </header>
+    <section>
+        <div>
+            Digite um número (entre 1 a 100) <input type="number" id="inputNum"> 
+            <input type="button" value="Adicionar" onclick="adicionar()">
+            <br>
+            <br>
+            <select id="selectNum" size="10" style="width: 200px;"></select>
+        </div>
+        <div>
+    
+            
+            <input type="button" value="Analisar" onclick="analisar()">
+        </div>
+        <br>
+        <div id="resultado">
+            
+        </div>
+    </section>
+
+    <script src="analisador.js"></script>
+</body>
+</html>

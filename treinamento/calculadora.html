@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div class="fundo">
+        <div class="calculadora">
+            <section id="resultado" style="font-size: 30px;"></section>
+            <table>
+                <tr>
+                    <td><button class="botão" onclick="clean()">C</button></td>
+                    <td><button class="botão" onclick="insert('+')" id="somar">&plus;</button></td>
+                    <td><button class="botão" onclick="insert('-')" id="menos">&minus;</button></td>
+                    <td><button class="botão" onclick="insert('*')" id="vezes">&times;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botão" onclick="insert('7')">7</button></td>
+                    <td><button class="botão" onclick="insert('8')">8</button></td>
+                    <td><button class="botão" onclick="insert('9')"> 9</button></td>
+                    <td><button class="botão" onclick="insert('/')" id="dividir">&divide;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botão" onclick="insert('4')">4</button></td>
+                    <td><button class="botão" onclick="insert('5')">5</button></td>
+                    <td><button class="botão" onclick="insert('6')">6</button></td>
+                    <td><button class="botão" onclick="insert('.')" id="virgula">,</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botão" onclick="insert('1')">1</button></td>
+                    <td><button class="botão" onclick="insert('2')">2</button></td>
+                    <td><button class="botão" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="botão" style="height:161px" onclick="calcular()">&equals;</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botão" style="width: 161px" onclick="insert('0')">0</button></td>
+                    <td><button class="botão" onclick="back()">&larr;</button></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>

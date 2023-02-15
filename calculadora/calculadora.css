@@ -1,0 +1,60 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    background: linear-gradient(320deg,rgba(255, 0, 0, 0.432), rgba(255, 255, 0, 0.733), rgb(139, 238, 255));
+}
+
+.calculadora {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 30px;
+    height: 450px;
+    width: 300px;
+    padding: 20px 17px ;
+}
+
+#resultado {
+    background-color: rgb(255, 255, 255);
+    text-align: right;
+    border-radius: 20px;
+    height: 75px;
+    font-size: 55px;
+    width: 300px;
+    align-items: center;
+}
+
+.botões {
+    font-family: 'Dosis', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding-top: 80px;
+}
+
+button {
+    height: 70px;
+    width: 70px;
+    font-size: 30px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(0, 0, 0, 0.37);
+}
+.cor {
+    background-color: rgb(100, 180, 226);
+    color: white;
+}
+
+
+#igual {
+    height: 135px;
+}
+#zero {
+    width: 135px;
+}
