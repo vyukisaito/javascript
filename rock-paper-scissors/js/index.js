@@ -33,7 +33,7 @@ function getResult() {
         resultDisplay.innerHTML = 'its a draw!'
     }
     if (computerChoice === 'rock' && userChoice === 'paper') {
-        resultDisplay.innerHTML = 'you lost!'
+        resultDisplay.innerHTML = 'you win!'
     }
     if (computerChoice === 'paper' && userChoice === 'rock') {
         resultDisplay.innerHTML = 'you lost!'
