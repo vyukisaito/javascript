@@ -8,7 +8,7 @@ for(var i = 10; i > 0; i--) {
 }
 console.log('Deu o break')
 
-var x = 10;
+var x = 0;
 
 while(x < 100) {
 
@@ -16,8 +16,9 @@ while(x < 100) {
 
     if (x === 60) {
         continue;
+        console.log('CONTINUE')
     }
 
-    console.log('Testamdo o continue' + x)   
+    console.log('Testamdo o continue ' + x)   
 
 }
