@@ -15,8 +15,8 @@ while(x < 100) {
     x += 10
 
     if (x === 60) {
-        continue;
         console.log('CONTINUE')
+        continue;
     }
 
     console.log('Testamdo o continue ' + x)   
