@@ -18,4 +18,13 @@ function soma(a, b) {
     return soma
 }
 
+var somaUm = soma(2, 5)
+console.log(somaUm)
+
+var somaDois = soma(23, 34)
+console.log(somaDois)
+
+console.log(soma(34, 90))
+
+
 
