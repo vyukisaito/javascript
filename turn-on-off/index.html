@@ -19,34 +19,26 @@
 
     </div>
 
-    <button id="on" onclick="on()">ON</button>
-    <button id="off" onclick="off()">OFF</button>
+    <button id="on" onclick="on()">ON/OFF</button>
 
     <script>
-    const on = document.getElementById('on')
-    const off = document.getElementById('off')
-    let click = 0
+const lamp = document.getElementById('lamp')
+let isOn = false
 
-    on.addEventListener("click", () => {
-        click++
+function alternarLamp() {
+  isOn = !isOn
 
-        if (click > 1) {
-            window.alert('its already lit')
-        } else {
-            document.getElementById('lamp').style.backgroundColor = 'yellow'
-        }
-    })
+  if (isOn) {
+    lamp.style.backgroundColor = 'yellow'
+  } else {
+    lamp.style.backgroundColor = 'white'
+  }
 
-    off.addEventListener("click", () => {
-        click++
+  click = 0
+}
 
-        if (click > 1) {
-            window.alert('its already lit')
-        } else {
-            document.getElementById('lamp').style.backgroundColor = 'white'
-        }
-    })
-    
+document.getElementById('on').addEventListener('click', alternarLamp)
+  
     </script>
 </body>
 </html>
