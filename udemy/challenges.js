@@ -27,8 +27,8 @@ if (dolphinsAverage > koalasAverage) {
     console.log(`Koalas wins (${koalasAverage.toFixed(1)}) Dolphins (${dolphinsAverage.toFixed(1)}) `)
 }
 
-var dolphinsAverage2 = (97 + 112 + 101) / 3
-var koalasAverage2 = (109 + 95 + 106) / 3
+var dolphinsAverage2 = (97 + 100 + 90) / 3
+var koalasAverage2 = (100 + 95 + 100) / 3
 
 console.log(dolphinsAverage2.toFixed(1), koalasAverage2.toFixed(1))
 
