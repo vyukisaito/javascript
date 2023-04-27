@@ -27,22 +27,18 @@ if (dolphinsAverage > koalasAverage) {
     console.log(`Koalas wins (${koalasAverage.toFixed(1)}) Dolphins (${dolphinsAverage.toFixed(1)}) `)
 }
 
-var dolphinsAverage2 = (90 + 100 + 101) / 3
-var koalasAverage2 = (100 + 95 + 100) / 3
+var dolphinsAverage2 = (97 + 112 + 101) / 3
+var koalasAverage2 = (109 + 95 + 106) / 3
 
-if (dolphinsAverage2 < 100) {
-    console.log(`Dolphins lose because > 100 (${dolphinsAverage2.toFixed(1)}) `)
+console.log(dolphinsAverage2.toFixed(1), koalasAverage2.toFixed(1))
 
-} if (koalasAverage2 < 100) {
-    console.log(`Koalas lose beacause > 100 (${koalasAverage2.toFixed(1)}) `)
-
-} else if (dolphinsAverage2 > koalasAverage2) {
-    console.log(`Dolphins wins (${dolphinsAverage2.toFixed(1)}) Koalas (${koalasAverage2.toFixed(1)}) `)
-
+if (dolphinsAverage2 > koalasAverage2 && koalasAverage2 >= 100) {
+    console.log('Dolphins win')
+} else if (koalasAverage2 > dolphinsAverage2 && koalasAverage2 >= 100) {
+    console.log('Koalas win')
 } else if (dolphinsAverage2 === koalasAverage2) {
-    console.log(`We have a draw, whit Dolphins scoring: ${dolphinsAverage2.toFixed(1)} and koalas: ${koalasAverage2.toFixed(1)} `)
-
+    console.log("It's a draw")
 } else {
-    console.log(`Koalas wins (${koalasAverage2.toFixed(1)}) Dolphins (${dolphinsAverage2.toFixed(1)}) `)
+    console.log("The teams din't did 100 or more points")
 }
 
