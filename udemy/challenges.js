@@ -43,14 +43,11 @@ if (dolphinsAverage2 > koalasAverage2 && koalasAverage2 >= 100) {
 }
 //-----------------------------------------------
 //Challenge 04
-var tip = 275
-switch (tip) {
-    case 275:
-        console.log(`${tip * 0.15}`)
-        break;
-    case 40:
-        console.log(`${tip >= 50 &&}`)
-        break;
-    default:
-        break;
-}
+var bill = 430
+
+console.log(`The bill is: ${bill} the tip is: ${bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2} the total is: ${bill >= 50 && bill <= 300 ? bill * 0.15 + bill : bill * 0.2 + bill}`)
+
+//Jeito do outro cara
+const bill2 = 275;
+const tip2 = bill2 <= 300 && bill2 >= 50 ? bill2 * 0.15 : bill2 * 0.2;
+console.log(`The bill was ${bill2}, the tip was ${tip2}, and the total value is ${bill2 + tip2}`)
