@@ -41,4 +41,16 @@ if (dolphinsAverage2 > koalasAverage2 && koalasAverage2 >= 100) {
 } else {
     console.log("The teams din't did 100 or more points")
 }
-
+//-----------------------------------------------
+//Challenge 04
+var tip = 275
+switch (tip) {
+    case 275:
+        console.log(`${tip * 0.15}`)
+        break;
+    case 40:
+        console.log(`${tip >= 50 &&}`)
+        break;
+    default:
+        break;
+}
