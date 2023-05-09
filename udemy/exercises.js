@@ -34,3 +34,15 @@ const calcage2 = function (birthYear2) {
 }
 const age2 = calcage2(2008)
 console.log(age1, age2)
+
+//Arrow function (short way to write a function expression)
+const calcAge3 = birthYear => 2023 - birthYear; /*com uma linha da função, não é necessário usar o 'return' */
+const age3 = calcAge3(2008);
+console.log(age3);
+
+const yearsRetirement = birthYear => {
+    const age = 2023 - birthYear;
+    const retirement = 65 - age;
+    return retirement;
+} /*quando tem mais de uma linha na função, é necessário utilizar o 'return' */
+console.log(yearsRetirement(2008));
