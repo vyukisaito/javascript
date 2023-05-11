@@ -81,6 +81,6 @@ console.log(calcAverage((44 + 23 + 71) / 3, (65 + 54 + 49) / 3))
 
 function chekWinner(dolphinAveragee, koalasAveragee) {
     if (dolphinAveragee >= koalasAveragee * 2) {
-
+        calcAverage
     }
 }
