@@ -74,13 +74,31 @@ console.log('-----------------------------------------')
 
 //Challenge 05
 
-const calcAverage = (dolphin, koala) => {
-    return `Dolphins scored ${dolphin} points and Koalas ${koala} points`;
-}
-console.log(calcAverage((44 + 23 + 71) / 3, (65 + 54 + 49) / 3))
+const calcAvarege = (a, b, c) => (a + b + c) / 3;
+//const dolphinAv = (44 + 23 + 71) / 3
+//const koalaAv = (65 + 54 + 49) / 3
+let scoreDolphin = calcAvarege(44, 23, 71).toFixed(1)
+let scoreKoala = calcAvarege(65, 54, 49).toFixed(1)
+console.log(`Dolphin scored: ${scoreDolphin}. Koalas scored: ${scoreKoala}`)
 
-function chekWinner(dolphinAveragee, koalasAveragee) {
-    if (dolphinAveragee >= koalasAveragee * 2) {
-        calcAverage
+const checkWinner = function (avgDolphins, avgKoalas) {
+    if (avgDolphins >= avgKoalas * 2) {
+        var winner = console.log(`Dolphins wins (${avgDolphins} vs ${avgKoalas})`);
+    } else if (avgKoalas >= avgDolphins * 2) {
+        var winner = console.log(`Koalas wins (${avgKoalas} vs ${avgDolphins})`);
+    } else {
+        var winner = console.log('Its a draw');
     }
 }
+checkWinner(scoreDolphin, scoreKoala);
+console.log('------------')
+
+console.log('Test 2')
+scoreDolphin = calcAvarege(85, 54, 41).toFixed(1);
+scoreKoala = calcAvarege(23, 34, 27).toFixed(1);
+console.log(scoreDolphin, scoreKoala);
+checkWinner(scoreDolphin, scoreKoala);
+
+/////////////////////////////////////////////////////////
+console.log('-----------------------------------------')
+///////////////////////////////////////////////////////
