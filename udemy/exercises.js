@@ -76,3 +76,20 @@ function fruitProcessor(apples, oranges) {
     return juice;
 }
 console.log(fruitProcessor(2, 3))
+
+/////////////////////////////////////////////////////////
+console.log('-----------------------------------------')
+////////////////////////////////////////////////////////
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends[friends.length - 1]); //Outra maneira de se fazer
+//First elemente = 0; Second element = 1...
+console.log(friends.length); //Serve para saber a quantidade de elementos
+
+friends[2] = 'Jay'; //Substitui o 'Peter para 'Jay'
+console.log(friends)
+
+const years = new Array(1958, 1962, 1970, 94, 2002);
