@@ -91,5 +91,10 @@ console.log(friends.length); //Serve para saber a quantidade de elementos
 
 friends[2] = 'Jay'; //Substitui o 'Peter para 'Jay'
 console.log(friends)
+//Porém não se pode substiruir uma array inteira
 
 const years = new Array(1958, 1962, 1970, 94, 2002);
+
+const firstName = 'Yuki';
+const yuki = [firstName, 'São Paulo', 2023 - 2008, friends]
+//Em uma array podemos colocar variavei, outras arrays, números, expressões;
