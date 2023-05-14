@@ -98,3 +98,20 @@ const years = new Array(1958, 1962, 1970, 94, 2002);
 const firstName = 'Yuki';
 const yuki = [firstName, 'São Paulo', 2023 - 2008, friends]
 //Em uma array podemos colocar variavei, outras arrays, números, expressões;
+
+const calcuAge = function (birthYear) {
+    return 2023 - birthYear;
+}
+const y = [1990, 1967, 2002, 2010, 2018];
+const agee1 = calcuAge(y[0]);
+const agee2 = calcuAge(y[1]);
+const agee3 = calcuAge(y[4]);
+console.log(agee1, agee2, agee3);
+
+const ages = [calcuAge(y[0]), calcuAge(y[1]), calcuAge(y[4])];
+//transformando em array a resposta
+console.log(ages);
+
+/////////////////////////////////////////////////////////
+console.log('-----------------------------------------')
+////////////////////////////////////////////////////////
