@@ -102,9 +102,13 @@ checkWinner(scoreDolphin, scoreKoala);
 /////////////////////////////////////////////////////////
 console.log('-----------------------------------------')
 ///////////////////////////////////////////////////////
-function calcTip(bill) {
-    const tipp = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+
+function calcTip(a, b, c) {
+    const tips = [a <= 300 && a >= 50 ? bill * 0.15 : a * 0.2 ? b <= 300 && b >= 50 ? bill * 0.15 : b * 0.2 : c <= 300 && c >= 50 ? bill * 0.15 : c * 0.2]
 
     return console.log(`The bill was ${bill}, the tip was ${tipp}, and the total value is ${bill + tipp}`)
 }
-calcTip(100)
+calcTip(bills)
+const bills = [125, 555, 44]
+const tips = []
+bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2 
