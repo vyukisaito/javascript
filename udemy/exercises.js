@@ -116,5 +116,33 @@ console.log(ages);
 console.log('-----------------------------------------')
 ////////////////////////////////////////////////////////
 
+// Add Elements
 const friend = ['Michael', 'Steven', 'Peter'];
-friend.push('Jay') //adiociona um valor na array
+const newF = friend.push('Jay'); //adiociona um valor na array
+console.log(friend);
+console.log(newF);
+
+friend.unshift('Jhon'); //Coloca o valor em primeiro
+console.log(friend);
+
+// Remove Elements
+friend.pop(); // Last element
+const pop = friend.pop();
+console.log(pop);
+console.log(friend);
+
+friend.shift(); //First element
+console.log(friend)
+
+//Localizar tal elemento
+console.log(friend.indexOf('Steven'))
+console.log(friend.indexOf('Bob'))
+
+//Maneira mais moderna de se localizar ou saber se tem ou não
+console.log(friend.includes('Steven'))
+console.log(friend.includes('Bob'))
+if (friend.includes('Steven')) {
+    console.log('You have a frind called Steven')
+} else {
+    console.log('You dont have a friend with this name')
+}
