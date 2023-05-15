@@ -115,3 +115,6 @@ console.log(ages);
 /////////////////////////////////////////////////////////
 console.log('-----------------------------------------')
 ////////////////////////////////////////////////////////
+
+const friend = ['Michael', 'Steven', 'Peter'];
+friend.push('Jay') //adiociona um valor na array
