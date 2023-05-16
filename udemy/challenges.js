@@ -103,12 +103,35 @@ checkWinner(scoreDolphin, scoreKoala);
 console.log('-----------------------------------------')
 ///////////////////////////////////////////////////////
 
-function calcTip(a, b, c) {
-    const tips = [a <= 300 && a >= 50 ? bill * 0.15 : a * 0.2 ? b <= 300 && b >= 50 ? bill * 0.15 : b * 0.2 : c <= 300 && c >= 50 ? bill * 0.15 : c * 0.2]
-
-    return console.log(`The bill was ${bill}, the tip was ${tipp}, and the total value is ${bill + tipp}`)
-}
-calcTip(bills)
 const bills = [125, 555, 44]
-const tips = []
-bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2 
+
+const calcTip = function (a, b, c) {
+    const tip1 = a <= 300 && a >= 50 ? a * 0.15 : a * 0.2
+    const tip2 = b <= 300 && b >= 50 ? b * 0.15 : b * 0.2
+    const tip3 = c <= 300 && c >= 50 ? c * 0.15 : c * 0.2
+    const tips = [tip1, tip2, tip3]
+    const total = [tip1 + a, tip2 + b, tip3 + c]
+    console.log(`The tip value: ${tips.join(", ")}; The bill values: ${bills.join(", ")}; The total value: ${total.join(", ")}`);
+    //console.log(`The tip value:${tips}; The bill values: ${bills}; The total value: ${total}`)
+
+
+    //console.log(`The bills was ${bills}, the tip was ${tips}, and the total value is `)
+}
+calcTip(bills[0], bills[1], bills[2])
+//console.log(bills[0])
+//bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2
+
+//Maneira do professor
+const calcTip2 = function (bill) {
+    return bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+}
+
+const bills2 = [125, 555, 44];
+const tips2 = [calcTip2(bills2[0]), calcTip2(bills2[1]), calcTip2(bills2[2])];
+const totals = [bills2[0] + tips2[0], bills2[2] + tips2[2], bills2[2] + tips2[2]];
+
+console.log(bills2, tips2, totals);
+
+/////////////////////////////////////////////////////////
+console.log('-----------------------------------------')
+///////////////////////////////////////////////////////
