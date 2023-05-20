@@ -146,3 +146,22 @@ if (friend.includes('Steven')) {
 } else {
     console.log('You dont have a friend with this name')
 }
+
+/////////////////////////////////////////////////////////
+console.log('-----------------------------------------')
+////////////////////////////////////////////////////////
+
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    ['Michael', 'Peter', 'Steven']
+];
+
+const jonasObject = {
+    firstName: 'Jonas',
+    lastName: 'Schemedtmann',
+    age: 2037 - 1991,
+    friendsss: ['Michael', 'Peter', 'Steven']
+}
+console.log(jonasObject, jonasArray)
