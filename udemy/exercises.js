@@ -1,4 +1,4 @@
-/*
+
 function logger() {
     console.log('Mu name is Yuki')
 }
@@ -36,7 +36,7 @@ console.log(age1)
 //Function Expression
 const calcage2 = function (birthYear2) {
     return 2023 - birthYear2
-   // /this one is anonymas function or functio expretion 
+    // /this one is anonymas function or functio expretion 
 }
 const age2 = calcage2(2008)
 console.log(age1, age2)
@@ -165,4 +165,3 @@ const jonasObject = {
     friendsss: ['Michael', 'Peter', 'Steven']
 }
 console.log(jonasObject, jonasArray) 
-*/
