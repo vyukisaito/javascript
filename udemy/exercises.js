@@ -1,4 +1,4 @@
-
+/*
 function logger() {
     console.log('Mu name is Yuki')
 }
@@ -165,3 +165,4 @@ const jonasObject = {
     friendsss: ['Michael', 'Peter', 'Steven']
 }
 console.log(jonasObject, jonasArray) 
+*/
