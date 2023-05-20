@@ -166,3 +166,17 @@ const jonasObject = {
 }
 console.log(jonasObject, jonasArray) 
 */
+const jonasObject = {
+    firstName: 'Jonas',
+    lastName: 'Schemedtmann',
+    age: 2037 - 1991,
+    friends: ['Michael', 'Peter', 'Steven']
+}
+console.log(jonasObject);
+
+console.log(jonasObject.lastName);//its a way to call an specific name
+console.log(jonasObject['lastName']);//another way
+
+const nameKey = 'Name';
+console.log(jonasObject['first' + nameKey])//we can do a expression in this way
+console.log(jonasObject['last' + nameKey])
