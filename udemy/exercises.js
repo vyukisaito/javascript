@@ -170,6 +170,7 @@ const jonasObject = {
     firstName: 'Jonas',
     lastName: 'Schemedtmann',
     age: 2037 - 1991,
+    job: 'teacher',
     friends: ['Michael', 'Peter', 'Steven']
 }
 console.log(jonasObject);
@@ -180,3 +181,17 @@ console.log(jonasObject['lastName']);//another way
 const nameKey = 'Name';
 console.log(jonasObject['first' + nameKey])//we can do a expression in this way
 console.log(jonasObject['last' + nameKey])
+
+const interestedIn = prompt('What do you want know about Jonas? firstName, lastName, age, job, friends.')
+console.log(jonasObject.interestedIn) // Esse não vai funcionar
+console.log(jonasObject[interestedIn])// esse vai pois é o ideal para expressões
+
+if (jonasObject[interestedIn]) {
+    console.log(jonasObject[interestedIn])
+} else {
+    console.log('Wrong request!')
+}
+
+jonasObject.location = 'Portugal';
+jonasObject['twitter'] = '@jonasschmedtman';
+console.log(jonasObject)
