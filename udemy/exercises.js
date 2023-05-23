@@ -165,7 +165,6 @@ const jonasObject = {
     friendsss: ['Michael', 'Peter', 'Steven']
 }
 console.log(jonasObject, jonasArray) 
-*/
 const jonasObject = {
     firstName: 'Jonas',
     lastName: 'Schemedtmann',
@@ -195,3 +194,40 @@ if (jonasObject[interestedIn]) {
 jonasObject.location = 'Portugal';
 jonasObject['twitter'] = '@jonasschmedtman';
 console.log(jonasObject)
+*/
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schemedtmann',
+    birthYear: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+
+    //calcAge: function(birthYear) {
+    //    return 2037 - birthYear;
+    //}
+
+    //calcAge: function () {
+    //    console.log(this); //é como se fosse o object todo
+    //    return 2037 - this.birthYear
+    //}
+
+    calcAge: function () {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+        //Podemos usar o this para add um novo elemento no object
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+    }
+
+};
+//console.log(jonas.calcAge(1991))
+console.log(jonas.calcAge())
+
+console.log(jonas.age)
+console.log(jonas.age)
+console.log(jonas.age)
+console.log(jonas.getSummary())
