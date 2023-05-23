@@ -170,5 +170,39 @@ const calcH = function () {
     }
 }
 
-console.log(calcH())
+calcH()
 console.log(john.calcBMI())
+
+//Other way
+const john2 = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+
+    calcBMI: function () {
+        this.BMI = (this.mass / (this.height * this.height)).toFixed(1)
+        return this.BMI
+    }
+}
+const mark2 = {
+    fullName: 'Mark Miler',
+    mass: 78,
+    height: 1.69,
+
+    calcBMI: function () {
+        this.BMI = (this.mass / (this.height * this.height)).toFixed(1)
+        return this.BMI
+    }
+
+}
+
+mark2.calcBMI();
+john2.calcBMI();
+
+console.log(mark2.BMI, john2.BMI)
+
+if (john2.calcBMI() > mark2.calcBMI()) {
+    console.log(`${john2.fullName}'s BMI (${john2.calcBMI()}) is higher than ${mark2.fullName}'s (${mark2.calcBMI()})`)
+} else {
+    console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john2.fullName}'s (${john2.calcBMI()})`)
+}
