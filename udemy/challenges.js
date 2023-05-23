@@ -1,5 +1,5 @@
 //Challenge 01
-
+/*
 var MarkW = 78
 var MarkT = 1.69
 var JohnW = 95
@@ -135,3 +135,40 @@ console.log(bills2, tips2, totals);
 /////////////////////////////////////////////////////////
 console.log('-----------------------------------------')
 ///////////////////////////////////////////////////////
+*/
+
+/////////////////////////////////////////////////////////
+console.log('-----------------------------------------')
+///////////////////////////////////////////////////////
+
+const john = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+
+    calcBMI: function () {
+        this.BMI = (this.mass / (this.height * this.height)).toFixed(1)
+        return this.BMI
+    }
+}
+const mark = {
+    fullName: 'Mark Miler',
+    mass: 78,
+    height: 1.69,
+
+    calcBMI: function () {
+        this.BMI = (this.mass / (this.height * this.height)).toFixed(1)
+        return this.BMI
+    }
+
+}
+const calcH = function () {
+    if (john.calcBMI() > mark.calcBMI()) {
+        console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})`)
+    } else {
+        console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})`)
+    }
+}
+
+console.log(calcH())
+console.log(john.calcBMI())
