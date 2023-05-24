@@ -233,7 +233,7 @@ console.log(jonas.getSummary())
 */
 
 //for loop keeps running while condition is TRUE
-for (let rep = 1; rep <= 10; rep++) {
+for (let rep = 1; rep <= 3; rep++) {
     console.log(`Punch number ${rep}`)
 }
 
@@ -244,7 +244,37 @@ const jonas = [
     ['Michael', 'Peter', 'Steven'],
     true
 ];
+const types = []
 
 for (let i = 0; i < jonas.length; i++) {
-    console.log(jonas[i])
+    console.log(jonas[i], typeof jonas[i],)
+
+    // Filling types array
+    //types[i] = typeof jonas[i]
+    types.push(typeof jonas[i])
 }
+console.log(types)
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2023 - years[i])
+}
+console.log(ages)
+
+// conrinue and break
+console.log('----- Only Strings ---------')
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] !== 'string') continue;
+
+    console.log(jonas[i], typeof jonas[i]);
+}
+
+console.log('----- Only BREAK ---------')
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] === 'number') break;
+
+    console.log(jonas[i], typeof jonas[i]);
+}
+
