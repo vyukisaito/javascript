@@ -11,11 +11,11 @@ section {
 #clock {
     margin: auto;
     margin-bottom: 20px;
-    font-size: 150px;
+    font-size: 11vw;
     padding-top: 20px;
     text-align: center;
-    height: 200px;
-    width: 700px;
+    height: 27vh;
+    width: 50vw;
     border: 2px solid black;
     border-radius: 10px;
     background-color: white;
