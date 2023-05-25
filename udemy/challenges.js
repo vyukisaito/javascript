@@ -231,3 +231,4 @@ const calcAvarege = function (arr) {
     return sum / arr.length;
 }
 console.log(calcAvarege(`The avarege is:${totals}`))
+//teste
