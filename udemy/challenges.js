@@ -135,7 +135,7 @@ console.log(bills2, tips2, totals);
 /////////////////////////////////////////////////////////
 console.log('-----------------------------------------')
 ///////////////////////////////////////////////////////
-*/
+
 
 /////////////////////////////////////////////////////////
 console.log('-----------------------------------------')
@@ -206,3 +206,28 @@ if (john2.calcBMI() > mark2.calcBMI()) {
 } else {
     console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john2.fullName}'s (${john2.calcBMI()})`)
 }
+*/
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+let tips = []
+let totals = []
+
+for (i = 0; i < bills.length; i++) {
+    const calcTip = function (bill) {
+        return bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+    }
+    tips.push(calcTip(bills[i]))
+    totals.push(bills[i] + tips[i])
+
+}
+console.log(` The bills are: ${bills}. The Tips are: ${tips}. The totals are: ${totals}`)
+
+const calcAvarege = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        // sum = sum + arr[i]
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+console.log(calcAvarege(`The avarege is:${totals}`))

@@ -278,7 +278,6 @@ for (let i = 0; i < jonas.length; i++) {
 }
 */
 
-//Loop backwards
 const jonas = [
     'Jonas',
     'Schmedtmann',
@@ -287,7 +286,7 @@ const jonas = [
     true
 ];
 
-for (let i = jonas.length - 1; i >= 0; i--) {
+for (let i = 0; i < jonas.length; i--) {
     console.log(jonas[i])
 
     // Filling types array
@@ -295,32 +294,3 @@ for (let i = jonas.length - 1; i >= 0; i--) {
     //types.push(typeof jonas[i])
 }
 //console.log(types)
-
-//Loop inside a loop
-for (let exercise = 1; exercise < 4; exercise++) {
-    console.log(`-----Starting exercise ${exercise}`)
-
-    for (let rep = 1; rep < 6; rep++) {
-        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`)
-    }
-}
-
-//While loop
-let rep = 1;
-while (rep <= 10) {
-    console.log(`${rep}`);
-    rep++;
-}
-
-let dice = Math.trunc(Math.random() * 6) + 1;
-
-
-while (dice !== 6) {
-    //se o dado não for 6 ele vai rodar esse console
-    console.log(`You rolled a ${dice}`);
-    //depois vai pra esse debaixo e volta para o console
-    dice = Math.trunc(Math.random() * 6) + 1;
-    if (dice === 6) {
-        console.log(`Loop ends`)
-    }
-} 
