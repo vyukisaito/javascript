@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    margin: auto;
+    background-color: darkseagreen;
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#analisar {
+    margin-top: 10px;
+}
