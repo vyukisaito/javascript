@@ -6,20 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorteador de Dado</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main>
+
+    <h1>
+        Sorteador de dado e Imagem em Ação e Cronometro
+    </h1>
+
+    <main id="container-um">
         <div class="dice">
             <div>
                 <input type="button" onclick="dado()" value="Sortear">
             </div>
-            <div id="resNum">
+            <div id="resNum" class="resultado">
             
             </div>
         </div>
 
-        <br>
         <br>
         <br>
         <br>
@@ -29,10 +34,17 @@
             <div>
                 <input type="button" onclick="imagemF()" value="Sortear Letra Imagem em Ação">
             </div>
-            <div id="resIm">
+            <div id="resIm" class="resultado">
             
             </div>
         </div>
+    </main>
+
+    <main>
+        <div id="cro">00:00:00;00</div>
+        <button id="start" onclick="start()">Começar</button>
+        <button id="pause" onclick="pause()">Pausar</button>
+        <button id="restart" onclick="restart()">Zerar</button>
     </main>
 
     <script src="script.js"></script>
