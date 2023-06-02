@@ -1,4 +1,4 @@
-'use strict'
+
 
 let num = document.getElementById('resNum')
 
