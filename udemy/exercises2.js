@@ -1,1 +1,40 @@
-console.log();
+const calcTemp = function(temps) {
+    let max = temps[0];
+    let min = temps[0];
+
+    for (let i = 0; i < temps.length; i++) {
+        if (typeof temps[i] !== 'number') continue
+
+        if (temps[i] > max) max = temps[i]
+        if (temps[i] < min) min = temps[i]
+    
+
+    }
+    
+    console.log(max, min);
+    return max - min
+};
+const amplitude = calcTemp([3, 43, 4, 5, 67, 23, -12, 53, 'error']);
+console.log(amplitude);
+
+const calcTemp2 = function(t1, t2) {
+    const temps = t1.concat(t2)
+    console.log(temps);
+
+    let max = temps[0];
+    let min = temps[0];
+
+    for (let i = 0; i < temps.length; i++) {
+        if (typeof temps[i] !== 'number') continue
+
+        if (temps[i] > max) max = temps[i]
+        if (temps[i] < min) min = temps[i]
+    
+
+    }
+    
+    console.log(max, min);
+    return max - min
+};
+const amplitudes = calcTemp2([3, 43, 4, 5, 67], [2, 12, 53, 'error']);
+console.log(amplitudes);
