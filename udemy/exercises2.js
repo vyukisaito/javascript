@@ -39,18 +39,25 @@ const calcTemp2 = function(t1, t2) {
 };
 const amplitudes = calcTemp2([3, 43, 4, 5, 67], [2, 12, 53, 'error']);
 console.log(amplitudes);
-*/
 
 const measureKelvin = function () {
-
+    
     const measurement = {
         type: 'temp',
         unit:  'celsius',
         value: prompt('Degrees Ceksius:')
     };
     console.table(measurement)
-
+    
     const kelvin = Number(measurement.value) + 273;
     return kelvin;
 };
 console.log(measureKelvin());
+*/
+
+const printForecast = function(arr) {
+    for(let i = 0; i < arr.length; i++) {
+        console.log(`${arr[i]}º in ${i + 1} days...`)
+    }
+}
+printForecast([17, 21, 23]);
