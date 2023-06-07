@@ -55,9 +55,14 @@ const measureKelvin = function () {
 console.log(measureKelvin());
 */
 
+const data1 = [17, 21, 23]
+const data2 = [15, 5, -5, 0, 4]
+
 const printForecast = function(arr) {
+    let str = '...'
     for(let i = 0; i < arr.length; i++) {
-        console.log(`${arr[i]}º in ${i + 1} days...`)
+        str = str + `${arr[i]}º in ${i + 1} days... `
     }
+    console.log(str)
 }
-printForecast([17, 21, 23]);
+printForecast(data2);    
