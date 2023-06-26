@@ -77,10 +77,10 @@ function watch() {
 }
 */
 
-let mil = 00
-let sec = 00
-let min = 00
-let hra = 00
+let mil = 0
+let sec = 0
+let min = 0
+let hra = 0
 let isRunning = false
 let intervalo
 
