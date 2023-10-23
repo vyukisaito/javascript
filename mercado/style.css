@@ -1,0 +1,23 @@
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    border: 1px solid black;
+    background-color: rgb(250, 250, 250);
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.562);
+    margin: auto;
+}
+
+div {
+    padding: 10px;
+}
+
+select{
+    height: 100px;
+    width: 100px;
+}
