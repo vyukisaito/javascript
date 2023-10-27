@@ -24,3 +24,14 @@ while (rep <= 10) {
     console.log(`${rep}`);
     rep++;
 }
+
+for (let i = 6; i < 10; i++) {
+    console.log(`Exercício ${i}`)
+}
+
+let novo = 1;
+while (novo <= 10) {
+    console.log(`${novo}`)
+    novo++
+}
+
