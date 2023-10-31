@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercadinho do Yuki</title>
+    <title>Calculador de Número</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <section>
         <div>
-            <p style="text-align: center;">Mercadinho do Yuki</p>
-            <p>O que deseja comprar?</p>
-            <input type="text" id="texto">
-            <button id="add" onclick="add()">Adicionar no Carrinho</button>
+            <p style="text-align: center;">Calculador de Número</p>
+            <p>Escreva um número:</p>
+            <input type="number" id="texto">
+            <button id="add" onclick="add()">Adicionar</button>
+
         </div>
         <br>    
         <div>
-            <select name="carrinho" id="compras" size="10">Salgadinho 20$</select>
+            <select name="carrinho" id="compras" size="10"></select>
+            <br>
+            <br>
+
+            <button onclick="analisar()">Analisar</button>
+            <br>
+            <div id="res"></div>
         </div>
     </section>
 

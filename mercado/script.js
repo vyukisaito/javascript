@@ -1,37 +1,36 @@
 let texto = document.getElementById('texto')
-let compra = document.getElementById('compras')
-let compras = []
+let numero = document.getElementById('compras')
+let res = document.getElementById('res')
+let num = []
 
 function add() {
+    num.push(Number(texto.value))
     let item = document.createElement("option")
-    item.text = `${texto.value}`
-    compra.appendChild(item)
+    item.text = `O ${texto.value} foi adicionado`
+    numero.appendChild(item)
     texto.value = ""
+    console.log(num)
 }
 
-for (let exercise = 1; exercise < 4; exercise++) {
-    console.log(`-----Starting exercise ${exercise}`)
+function analisar() {
+    if (num == 0) {
+        window.alert("Adicione Valores")
+    } else {
+        let total = num.length
+        let maior = num[0]
+        let menor = num[0]
 
-    for (let rep = 1; rep < 6; rep++) {
-        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`)
+        for (let pos in num) {
+            if (num[pos] > maior) 
+            maior = num[pos]
+            if (num[pos] < menor)
+            menor = num[pos]
+        }
+        
+        res.innerHTML = `<p>O maior valor é o ${maior} </p>`
+        res.innerHTML += `<p>O menor valor é o ${menor} </p>`
     }
-}
-exercise = 1
+    }
 
-//While loop
-let rep = 1;
-while (rep <= 10) {
-    console.log(`${rep}`);
-    rep++;
-}
 
-for (let i = 6; i < 10; i++) {
-    console.log(`Exercício ${i}`)
-}
-
-let novo = 1;
-while (novo <= 10) {
-    console.log(`${novo}`)
-    novo++
-}
 
